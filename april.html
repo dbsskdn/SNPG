@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>신문 보기</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><strong>4월호</strong></h1>
+						<p>여기는 4월호 - 식물의 과학이랍니다!</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+							<section id="cta" class="main special">
+								<header class="major">
+									<h2>4월호 - 식물의 과학</h2>
+									<!-- Slideshow container -->
+									<div class="slideshow-container">
+
+									 <!-- Full-width images with number and caption text -->
+									 <div class="mySlides fade">
+										 <img src="images/design/001.png" style="width:100%">
+									 </div>
+
+									 <div class="mySlides fade">
+										 <img src="images/design/002.png" style="width:100%">
+									 </div>
+
+									 <div class="mySlides fade">
+										 <img src="images/design/003.png" style="width:100%">
+									 </div>
+
+									 <div class="mySlides fade">
+										 <img src="images/design/004.png" style="width:100%">
+									 </div>
+
+									 <div class="mySlides fade">
+										 <img src="images/design/005.png" style="width:100%">
+									 </div>
+
+									 <div class="mySlides fade">
+										 <img src="images/design/006.png" style="width:100%">
+									 </div>
+
+									 <div class="mySlides fade">
+										 <img src="images/design/007.png" style="width:100%">
+									 </div>
+
+									 <div class="mySlides fade">
+										 <img src="images/design/008.png" style="width:100%">
+									 </div>
+
+									 <!-- Next and previous buttons -->
+									 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+									 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+									</div>
+									<br>
+
+									<!-- The dots/circles -->
+									<div style="text-align:center">
+									 <span class="dot" onclick="currentSlide(1)"></span>
+									 <span class="dot" onclick="currentSlide(2)"></span>
+									 <span class="dot" onclick="currentSlide(3)"></span>
+									 <span class="dot" onclick="currentSlide(4)"></span>
+									 <span class="dot" onclick="currentSlide(5)"></span>
+									 <span class="dot" onclick="currentSlide(6)"></span>
+									 <span class="dot" onclick="currentSlide(7)"></span>
+									 <span class="dot" onclick="currentSlide(8)"></span>
+									</div>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="index.html" class="button primary">다시 돌아가기</a></li>
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>피드백</h2>
+							<p>피드백은 아래 링크로 보내주세요!</p>
+							<ul class="actions">
+								<li><a href="https://forms.gle/8oDhJMkiDey3Q1or6" class="button">피드백</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>문의 및 정보</h2>
+							<dl class="alt">
+								<dt>Phone</dt>
+								<dd>010-3974-4521</dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:nawooyoon@gmail.com">nawooyoon@gmail.com</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">Designed by SNPG in Ulsan.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			}
+			</script>
+
+	</body>
+</html>
